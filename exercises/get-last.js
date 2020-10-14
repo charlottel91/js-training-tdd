@@ -8,7 +8,10 @@
  */
 
 // Your code:
-
+const getLast = (el) => {
+    let length = el.length - 1
+    return el[length]
+}
 //* Begin of tests
 const assert = require('assert');
 
