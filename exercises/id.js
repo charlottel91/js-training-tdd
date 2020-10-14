@@ -8,6 +8,10 @@
 
 // Your code:
 
+const id = (el) => {
+    return el
+}
+
 //* Begin of tests
 const assert = require('assert');
 
