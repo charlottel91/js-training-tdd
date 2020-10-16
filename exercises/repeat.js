@@ -8,6 +8,15 @@
  */
 
 // Your code:
+const repeat = (string, num) => {
+    let n = 0
+    let newString = ''
+    while(n<num) {
+        n = n + 1
+        newString= `${newString}${string}`
+    }
+    return newString
+}
 
 //* Begin of tests
 const assert = require('assert');

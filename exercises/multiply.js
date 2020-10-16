@@ -21,8 +21,6 @@ const multiply = (a, b) => {
         if (n1 < 0 | n2 <0) return (-x);
         else return (x);
     }
-
-
 }
 
 //* Begin of tests

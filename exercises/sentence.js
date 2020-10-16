@@ -7,20 +7,21 @@
  */
 
 // Your code:
-// const sentence = (words) => {
-//     for (var i = 0; i < words.length; i++) {
-//         words[i] + ' ';
-    
-//       }
-//       return words
-// }
+const sentence = (words) => {
+  let newWords = ''
+  for (let i = 0; i < words.length-1; i++) {
+      newWords += `${words[i]} `
+  }
+  newWords =  `${newWords}${words[words.length-1]}`
+  return newWords
+}
 //* Begin of tests
 const assert = require('assert');
 
 assert.strictEqual(typeof sentence, 'function');
 assert.strictEqual(sentence.length, 1);
-assert.deepStrictEqual(sentence([ 'a', 'b', 'c' ]), 'a b c');
-assert.deepStrictEqual(sentence([ 'a', '1', 'c' ]), 'a 1 c');
-assert.deepStrictEqual(sentence([ 'a', '1', 'c', 'd', 'e', 'f' ]), 'a 1 c d e f');
-assert.deepStrictEqual(sentence([ 'wol.lol', 'lo,lol' ]), 'wol.lol lo,lol');
+assert.deepStrictEqual(sentence(['a', 'b', 'c']), 'a b c');
+assert.deepStrictEqual(sentence(['a', '1', 'c']), 'a 1 c');
+assert.deepStrictEqual(sentence(['a', '1', 'c', 'd', 'e', 'f']), 'a 1 c d e f');
+assert.deepStrictEqual(sentence(['wol.lol', 'lo,lol']), 'wol.lol lo,lol');
 // End of tests */
