@@ -11,9 +11,16 @@
  */
 
 // Your code:
+const jadenCase = (str) => {
+    return str.replace(/(^|\s)\S/g, l => l.toUpperCase())
+}
 
 //* Begin of tests
 const assert = require('assert');
 
-assert.fail('You must write your own tests');
+assert.strictEqual(typeof jadenCase, 'function');
+assert.strictEqual(jadenCase.length, 1);
+assert.deepStrictEqual(jadenCase('hello my world'), 'Hello My World');
+
+// assert.fail('You must write your own tests');
 // End of tests */
