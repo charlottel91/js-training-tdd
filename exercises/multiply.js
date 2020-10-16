@@ -10,22 +10,18 @@
 
 // Your code:
 const multiply = (a, b) => {
-    // let n = 1
-    // let x = Math.abs(n2)
-    // if (n1 === 0 || n2 === 0) return 0
-    // else {
-    //     while (n<n1) {
-    //         x = x + Math.abs(n2) 
-    //         n++       
-    //     }
-    //     if (n1 < 0 || n2 <0) return console.log(-x);
-    //     else return console.log(x);
+    let n = 1
+    let x = Math.abs(n2)
+    if (n1 === 0 || n2 === 0) return 0
+    else {
+        while (n<n1) {
+            x = x + Math.abs(n2) 
+            n++       
+        }
+        if (n1 < 0 | n2 <0) return (-x);
+        else return (x);
+    }
 
-    // }
-    // if ((a == 0) || (b == 0))
-    //     return 0;
-    // else
-    //     return (a + multiplier(a, b - 1));
 
 }
 

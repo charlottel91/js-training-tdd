@@ -7,7 +7,13 @@
  */
 
 // Your code:
-
+// const sentence = (words) => {
+//     for (var i = 0; i < words.length; i++) {
+//         words[i] + ' ';
+    
+//       }
+//       return words
+// }
 //* Begin of tests
 const assert = require('assert');
 
