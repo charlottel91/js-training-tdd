@@ -9,19 +9,22 @@
  */
 
 // Your code:
-const multiply = (a, b) => {
+const multiply = (n1, n2) => {
     let n = 1
     let x = Math.abs(n2)
-    if (n1 === 0 || n2 === 0) return 0
+    if (n1 === 0 | n2 === 0) return 0
     else {
-        while (n<n1) {
+        while (n < Math.abs(n1)) {
             x = x + Math.abs(n2) 
             n++       
         }
-        if (n1 < 0 | n2 <0) return (-x);
+        if (n1 < 0 && n2 < 0) return x
+        else if (n1 < 0 | n2 <0) return (-x);
         else return (x);
     }
 }
+
+multiply(3, -4)
 
 //* Begin of tests
 const assert = require('assert');
